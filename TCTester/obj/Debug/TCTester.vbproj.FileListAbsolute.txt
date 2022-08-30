@@ -1,0 +1,37 @@
+C:\Users\rchinelatto\BPG2\TCTester\TCTester\obj\Debug\TCTester.vbprojAssemblyReference.cache
+C:\Users\rchinelatto\BPG2\TCTester\TCTester\obj\Debug\TCTester.Resources.resources
+C:\Users\rchinelatto\BPG2\TCTester\TCTester\obj\Debug\TCTester.Principal.resources
+C:\Users\rchinelatto\BPG2\TCTester\TCTester\obj\Debug\TCTester.vbproj.GenerateResource.cache
+C:\Users\rchinelatto\BPG2\TCTester\TCTester\obj\Debug\TCTester.vbproj.CoreCompileInputs.cache
+C:\Users\rchinelatto\BPG2\TCTester\TCTester\bin\Debug\TCTester.exe.config
+C:\Users\rchinelatto\BPG2\TCTester\TCTester\bin\Debug\TCTester.exe
+C:\Users\rchinelatto\BPG2\TCTester\TCTester\bin\Debug\TCTester.pdb
+C:\Users\rchinelatto\BPG2\TCTester\TCTester\bin\Debug\TCTester.xml
+C:\Users\rchinelatto\BPG2\TCTester\TCTester\obj\Debug\TCTester.exe
+C:\Users\rchinelatto\BPG2\TCTester\TCTester\obj\Debug\TCTester.xml
+C:\Users\rchinelatto\BPG2\TCTester\TCTester\obj\Debug\TCTester.pdb
+C:\Users\rchinelatto\BPG2\app-tc\TCTester\bin\Debug\TCTester.exe.config
+C:\Users\rchinelatto\BPG2\app-tc\TCTester\bin\Debug\TCTester.exe
+C:\Users\rchinelatto\BPG2\app-tc\TCTester\bin\Debug\TCTester.pdb
+C:\Users\rchinelatto\BPG2\app-tc\TCTester\bin\Debug\TCTester.xml
+C:\Users\rchinelatto\BPG2\app-tc\TCTester\obj\Debug\TCTester.vbprojAssemblyReference.cache
+C:\Users\rchinelatto\BPG2\app-tc\TCTester\obj\Debug\TCTester.Resources.resources
+C:\Users\rchinelatto\BPG2\app-tc\TCTester\obj\Debug\TCTester.Principal.resources
+C:\Users\rchinelatto\BPG2\app-tc\TCTester\obj\Debug\TCTester.vbproj.GenerateResource.cache
+C:\Users\rchinelatto\BPG2\app-tc\TCTester\obj\Debug\TCTester.vbproj.CoreCompileInputs.cache
+C:\Users\rchinelatto\BPG2\app-tc\TCTester\obj\Debug\TCTester.exe
+C:\Users\rchinelatto\BPG2\app-tc\TCTester\obj\Debug\TCTester.xml
+C:\Users\rchinelatto\BPG2\app-tc\TCTester\obj\Debug\TCTester.pdb
+C:\Users\davoliveira\Desktop\Exemplos com audio\app-tc-master\TCTester\obj\Debug\TCTester.vbproj.AssemblyReference.cache
+C:\Users\davoliveira\Desktop\Exemplos com audio\app-tc-master\TCTester\obj\Debug\TCTester.vbproj.SuggestedBindingRedirects.cache
+C:\Users\davoliveira\Desktop\Exemplos com audio\app-tc-master\TCTester\obj\Debug\TCTester.Resources.resources
+C:\Users\davoliveira\Desktop\Exemplos com audio\app-tc-master\TCTester\obj\Debug\TCTester.Principal.resources
+C:\Users\davoliveira\Desktop\Exemplos com audio\app-tc-master\TCTester\obj\Debug\TCTester.vbproj.GenerateResource.cache
+C:\Users\davoliveira\Desktop\Exemplos com audio\app-tc-master\TCTester\obj\Debug\TCTester.vbproj.CoreCompileInputs.cache
+C:\Users\davoliveira\Desktop\Exemplos com audio\app-tc-master\TCTester\bin\Debug\TCTester.exe.config
+C:\Users\davoliveira\Desktop\Exemplos com audio\app-tc-master\TCTester\bin\Debug\TCTester.exe
+C:\Users\davoliveira\Desktop\Exemplos com audio\app-tc-master\TCTester\bin\Debug\TCTester.pdb
+C:\Users\davoliveira\Desktop\Exemplos com audio\app-tc-master\TCTester\bin\Debug\TCTester.xml
+C:\Users\davoliveira\Desktop\Exemplos com audio\app-tc-master\TCTester\obj\Debug\TCTester.exe
+C:\Users\davoliveira\Desktop\Exemplos com audio\app-tc-master\TCTester\obj\Debug\TCTester.xml
+C:\Users\davoliveira\Desktop\Exemplos com audio\app-tc-master\TCTester\obj\Debug\TCTester.pdb

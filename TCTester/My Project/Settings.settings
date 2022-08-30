@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="BarCodeFile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">c:\barcode.csv</Value>
+    </Setting>
+    <Setting Name="BarCodeSeparador" Type="System.String" Scope="User">
+      <Value Profile="(Default)">;</Value>
+    </Setting>
+    <Setting Name="BarCodeAudio" Type="System.String" Scope="User">
+      <Value Profile="(Default)">c:\tts.wav</Value>
+    </Setting>
+    <Setting Name="ServerIP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">192.168.0.55</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
