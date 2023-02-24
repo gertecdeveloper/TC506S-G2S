@@ -14,6 +14,6 @@
  
  ----------------------------------------------------------------------
 
-Manual de desenvolvimento Gbot:
+Manuais e artigos sobre terminais de consulta:
 
 https://gertec.atlassian.net/servicedesk/customer/article/57943879206207554
