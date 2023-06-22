@@ -114,12 +114,14 @@ Public Class Principal
         Dim Resposta As String
         Dim Descricao As String
         Dim Preco As String
+        Dim Preco2 As String
         Dim EnviarAudio As String
 
         Mensagem("Recebeu BarCode: " + Codigo)
 
         Descricao = ""
         Preco = ""
+        Preco2 = ""
         EnviarAudio = ""
 
         Codigo = Codigo.Substring(1, Codigo.Length - 1)
@@ -127,9 +129,10 @@ Public Class Principal
         If (DataGridView1.Rows.Count > 0) Then
             For Each row As DataGridViewRow In DataGridView1.Rows
                 If row.Cells.Item("Column1").Value = Codigo Then
-                    'Resposta = "#" + row.Cells("Column2").Value.ToString() + "|" + row.Cells("Column3").Value.ToString()
+                    'Resposta = "#" + row.Cells("Column2").Value.ToString() + "|" + row.Cells("Column3").Value.ToString() + "|" + row.Cells("Column5").Value.ToString()
                     Descricao = row.Cells("Column2").Value.ToString()
                     Preco = row.Cells("Column3").Value.ToString()
+                    Preco2 = row.Cells("Column5").Value.ToString()
                     EnviarAudio = row.Cells("Column4").Value.ToString()
                     Exit For
                 End If
@@ -137,10 +140,11 @@ Public Class Principal
         End If
 
         If (EnviarAudio = "1") Then
-            EnviaAudio(Descricao, Preco)
+            EnviaAudio(Descricao, Preco, Preco2)
         Else
             If (Descricao.Length > 0) Then
-                Resposta = "#" + Descricao + "|" + Preco
+                'Resposta = "#" + Descricao + "                                                  Preço Var.: R$ 20,30|Preço Ata: " + Preco
+                Resposta = "#" + Descricao + "|" + Preco + "|" + Preco2
             Else
                 Resposta = "#nfound"
             End If
@@ -547,6 +551,7 @@ Public Class Principal
         Mensagem("===> " & Texto)
         Mensagem("---> " & ConverteStringParaHexa(Texto))
         Dim sendBytes As [Byte]() = Encoding.Default.GetBytes(Texto)
+        TextBoxDebug.Text = TextBoxDebug.Text & vbCrLf & Texto
         networkStream.Write(sendBytes, 0, sendBytes.Length)
         networkStream.Flush()
     End Sub
@@ -933,7 +938,7 @@ Public Class Principal
     End Sub
 
     Private Sub ComboBoxSetConfig_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxSetConfig.SelectedIndexChanged
-        SelecionaComandoSetConfig
+        SelecionaComandoSetConfig()
     End Sub
 
     Private Function GetTamEString(ByVal Comando As String)
@@ -1187,7 +1192,7 @@ Public Class Principal
         My.Settings.Save()
     End Sub
 
-    Public Sub EnviaAudio(ByVal Descricao As String, ByVal Preco As String)
+    Public Sub EnviaAudio(ByVal Descricao As String, ByVal Preco As String, ByVal Preco2 As String)
         Dim Parametros As String
         Dim fi As FileInfo
         Dim tamAudio As Long
@@ -1220,6 +1225,12 @@ Public Class Principal
         End If
         Parametros += TempTam + Preco
 
+        TempTam = Preco2.Length.ToString
+        If (TempTam.Length < 2) Then
+            TempTam = "0" + TempTam
+        End If
+        Parametros += TempTam + Preco + Preco2
+
         'aguardar 3s! Se responder antes, não vai tocar (está tocando o 'buscando preço, aguarde...')
         Thread.Sleep(3000)
 
@@ -1227,6 +1238,7 @@ Public Class Principal
 
         'enviar o audio separado
         Dim sendBytes As [Byte]() = File.ReadAllBytes(TextBoxAudioFileName.Text)
+        Mensagem("^~~~> " & ConverteHexaParaString(sendBytes.ToString))
         networkStream.Write(sendBytes, 0, sendBytes.Length)
         networkStream.Flush()
     End Sub
@@ -1254,6 +1266,14 @@ Public Class Principal
     Private Sub TextBoxServerIP_TextChanged(sender As Object, e As EventArgs) Handles TextBoxServerIP.TextChanged
         My.Settings.ServerIP = TextBoxServerIP.Text
         My.Settings.Save()
+
+    End Sub
+
+    Private Sub TextBoxDebug_TextChanged(sender As Object, e As EventArgs) Handles TextBoxDebug.TextChanged
+
+    End Sub
+
+    Private Sub TextBoxMesgLinha1_TextChanged(sender As Object, e As EventArgs) Handles TextBoxMesgLinha1.TextChanged
 
     End Sub
 End Class
