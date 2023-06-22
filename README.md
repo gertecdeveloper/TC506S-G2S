@@ -17,3 +17,15 @@
 Manuais e artigos sobre terminais de consulta:
 
 https://gertec.atlassian.net/servicedesk/customer/article/57943879206207554
+
+ ----------------------------------------------------------------------
+
+Observação: O exemplo acima é compatível com os seguintes terminais:
+
+ * TC506 S
+ * TC506 E
+ * TC506 
+ * BG2 S
+ * BG2 E
+ * BG2
+
